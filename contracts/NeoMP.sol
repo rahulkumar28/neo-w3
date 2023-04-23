@@ -1,5 +1,5 @@
 /// SPDX-License-Identifier: MIT
-// contracts/N1ceMP.sol
+// contracts/NeoMP.sol
 
 pragma solidity ^0.8.3;
 
@@ -12,7 +12,7 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 
 import "hardhat/console.sol";
 
-contract N1ceMP is
+contract NeoMP is
     ERC721,
     ERC721URIStorage,
     ERC721Burnable,
@@ -71,19 +71,15 @@ contract N1ceMP is
     }
 
     // The following functions are overrides required by Solidity.
-    function _burn(uint256 tokenId)
-        internal
-        override(ERC721, ERC721URIStorage)
-    {
+    function _burn(
+        uint256 tokenId
+    ) internal override(ERC721, ERC721URIStorage) {
         super._burn(tokenId);
     }
 
-    function tokenURI(uint256 tokenId)
-        public
-        view
-        override(ERC721, ERC721URIStorage)
-        returns (string memory)
-    {
+    function tokenURI(
+        uint256 tokenId
+    ) public view override(ERC721, ERC721URIStorage) returns (string memory) {
         return super.tokenURI(tokenId);
     }
 
@@ -159,7 +155,7 @@ contract N1ceMP is
     }
 
     /* Returns total Earning value of MP */
-    function getN1ceMPBalance() public view returns (uint256) {
+    function getNeoMPBalance() public view returns (uint256) {
         return address(this).balance;
     }
 
@@ -280,7 +276,7 @@ contract N1ceMP is
         approve(contractAddress, itemId);
         //reduce count of current supply of the token
         idToMarketItem[itemId].count++;
-        //increment listing count of N1ceMP
+        //increment listing count of NeoMP
         _itemsListed.increment();
     }
 
