@@ -17,7 +17,7 @@ function N1ce({ Component, pageProps }) {
     <>
       <div className="">
         <Head>
-          <title>N1ce</title>
+          <title>Neo</title>
           <meta charSet="UTF-8" />
           <meta name="description" content="Token Marketplace" />
           <meta name="keywords" content="HTML, CSS, JavaScript" />
