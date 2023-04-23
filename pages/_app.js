@@ -11,7 +11,7 @@ import { BellIcon, BeakerIcon } from '@heroicons/react/24/solid';
 
 
 
-function N1ce({ Component, pageProps }) {
+function Neo({ Component, pageProps }) {
 
   return (
     <>
@@ -92,4 +92,4 @@ function N1ce({ Component, pageProps }) {
   )
 }
 
-export default N1ce
+export default Neo
