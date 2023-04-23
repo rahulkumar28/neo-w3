@@ -21,7 +21,7 @@ function Neo({ Component, pageProps }) {
           <meta charSet="UTF-8" />
           <meta name="description" content="Token Marketplace" />
           <meta name="keywords" content="HTML, CSS, JavaScript" />
-          <meta name="author" content="N1ce" />
+          <meta name="author" content="NeoMP" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link
             rel="icon"
